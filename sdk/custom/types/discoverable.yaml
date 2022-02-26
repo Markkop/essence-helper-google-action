@@ -1,2 +1,64 @@
 synonym:
+  entities:
+    apple:
+      synonyms:
+      - Apple
+      - Apples
+    basic_noodles:
+      synonyms:
+      - Basic noodle
+    basil:
+      synonyms:
+      - Basil
+    blood_orange:
+      synonyms:
+      - Blood Orange
+    carrot:
+      synonyms:
+      - Carrot
+    cilantro:
+      synonyms:
+      - Cilantro
+    dragon_fruit:
+      synonyms:
+      - Dragon fruit
+    durian:
+      synonyms:
+      - Durian
+    flour:
+      synonyms:
+      - Flour
+    lemon:
+      synonyms:
+      - Lemon
+    milk:
+      synonyms:
+      - Milk
+    orange:
+      synonyms:
+      - Orange
+    papaya:
+      synonyms:
+      - Papaya
+    peach:
+      synonyms:
+      - Peach
+    pineapple:
+      synonyms:
+      - Pineapple
+    pomegranate:
+      synonyms:
+      - Pomegranate
+    purple_mushroom:
+      synonyms:
+      - Purple Mushroom
+    rare_mushroom:
+      synonyms:
+      - Rare Mushroom
+    rosemary:
+      synonyms:
+      - Rosemary
+    sugar:
+      synonyms:
+      - Sugar
   matchType: EXACT_MATCH

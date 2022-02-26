@@ -1,1 +1,153 @@
-synonym: {}
+synonym:
+  entities:
+    well_rounded:
+      synonyms:
+      - Well Rounded
+    warlock:
+      synonyms:
+      - Warlock
+    brawler:
+      synonyms:
+      - Brawler
+    exemplar:
+      synonyms:
+      - Exemplar
+    mighty:
+      synonyms:
+      - Mighty
+    brainiac:
+      synonyms:
+      - Brainiac
+    vanguard:
+      synonyms:
+      - Vanguard
+    eagle_Eye:
+      synonyms:
+      - Eagle Eye
+    slayer:
+      synonyms:
+      - Slayer
+    sadistic:
+      synonyms:
+      - Sadistic
+    sprinter:
+      synonyms:
+      - Sprinter
+    oxygenator:
+      synonyms:
+      - Oxygenator
+    lightfoot:
+      synonyms:
+      - Lightfoot
+    steadfast:
+      synonyms:
+      - Steadfast
+    automend:
+      synonyms:
+      - Automend
+    essence Flow:
+      synonyms:
+      - Essence Flow
+    shell:
+      synonyms:
+      - Shell
+    robust:
+      synonyms:
+      - Robust
+    assistant:
+      synonyms:
+      - Assistant
+    brutal:
+      synonyms:
+      - Brutal
+    bastion:
+      synonyms:
+      - Bastion
+    ferocious:
+      synonyms:
+      - Ferocious
+    banshees_bellow:
+      synonyms:
+      - Banshee's Bellow
+    blood Thief:
+      synonyms:
+      - Blood Thief
+    body Meld:
+      synonyms:
+      - Body Meld
+    brain Freeze:
+      synonyms:
+      - Brain Freeze
+    breath Stealer:
+      synonyms:
+      - Breath Stealer
+    bunker:
+      synonyms:
+      - Bunker
+    chrono_skip:
+      synonyms:
+      - Chrono Skip
+    deaths_chariot:
+      synonyms:
+      - Death's Chariot
+    deep_breathing:
+      synonyms:
+      - Deep Breathing
+    defiant:
+      synonyms:
+      - Defiant
+    essence_thief:
+      synonyms:
+      - Essence Thief
+    fighting_spirit:
+      synonyms:
+      - Fighting Spirit
+    flare:
+      synonyms:
+      - Flare
+    flow_state:
+      synonyms:
+      - Flow State
+    helping_hand:
+      synonyms:
+      - Helping Hand
+    inner_rage:
+      synonyms:
+      - Inner Rage
+    killers_edge:
+      synonyms:
+      - Killer's Edge
+    kingmaker:
+      synonyms:
+      - Kingmaker
+    marrow_stealer:
+      synonyms:
+      - Marrow Stealer
+    mind_meld:
+      synonyms:
+      - Mind Meld
+    pain_link:
+      synonyms:
+      - Pain Link
+    pit_fighter:
+      synonyms:
+      - Pit Fighter
+    scatter:
+      synonyms:
+      - Scatter
+    shelter:
+      synonyms:
+      - Shelter
+    soul_shock:
+      synonyms:
+      - Soul Shock
+    spirit_meld:
+      synonyms:
+      - Spirit Meld
+    super_heated:
+      synonyms:
+      - Super Heated
+    thick_as_thieves:
+      synonyms:
+      - Thick As Thieves
+  matchType: EXACT_MATCH
