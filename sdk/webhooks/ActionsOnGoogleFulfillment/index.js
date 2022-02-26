@@ -46,19 +46,7 @@ const tints = {
 const app = conversation({debug: true});
 
 app.handle('welcome', (conv) => {
-  if (!conv.device.capabilities.includes('INTERACTIVE_CANVAS')) {
-    conv.add('Sorry, this device does not support Interactive Canvas!');
-    conv.scene.next.name = 'actions.page.END_CONVERSATION';
-    return;
-  }
-  conv.add('Welcome! Do you want me to change color or pause spinning? ' +
-    'You can also tell me to ask you later.');
-  conv.add(new Canvas({
-    // Update this placeholder string with the URL for your canvas web app.
-    url: CANVAS_URL,
-    enableFullScreen: true,
-    continueTtsDuringTouch: true,
-  }));
+  conv.add('Hello Zenithian. I can get you the effects of an equipment perk or the location of a cooking ingredient. Which one would you like to know?');
 });
 
 app.handle('fallback', (conv) => {

@@ -1,7 +1,7 @@
 category: GAMES_AND_TRIVIA
 defaultLocale: en
 localizedSettings:
-  displayName: Interactive canvas sample
-  pronunciation: Interactive canvas sample
+  displayName: Essence Helper
+  pronunciation: Essence Helper
+  voice: female_1
 projectId: essence-helper
-usesInteractiveCanvas: true
