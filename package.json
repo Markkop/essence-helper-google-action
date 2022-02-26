@@ -12,7 +12,9 @@
     "test": "npm run lint",
     "serve": "firebase serve",
     "deploy": "firebase deploy",
-    "deploy-project": "firebase deploy --project essence-helper --only hosting"
+    "deploy-project": "firebase deploy --project essence-helper --only hosting",
+    "gactions-push": "cd sdk && gactions push && cd ..",
+    "preview": "cd sdk && gactions deploy preview && cd .."
   },
   "devDependencies": {
     "eslint": "^5.2.0",
