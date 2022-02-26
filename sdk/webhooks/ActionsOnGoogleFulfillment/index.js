@@ -22,7 +22,7 @@ const functions = require('firebase-functions');
 
 const INSTRUCTIONS = 'Do you want me to change color or pause spinning?';
 
-const CANVAS_URL = 'https://PROJECT_ID.web.app';
+const CANVAS_URL = 'https://essence-helper.web.app';
 
 const tints = {
   black: 0x000000,
