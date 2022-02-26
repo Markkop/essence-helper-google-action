@@ -13,7 +13,8 @@
     "serve": "firebase serve",
     "deploy": "firebase deploy",
     "deploy-project": "firebase deploy --project essence-helper --only hosting",
-    "gactions-push": "cd sdk && gactions push && cd ..",
+    "push": "cd sdk && gactions push && cd ..",
+    "pull": "cd sdk && gactions pull && cd ..",
     "preview": "cd sdk && gactions deploy preview && cd .."
   },
   "devDependencies": {
