@@ -1,11 +1,6 @@
 handlers:
 - name: welcome
-- name: instructions
-- name: restart
 - name: fallback
-- name: change_color
-- name: start_spin
-- name: stop_spin
 - name: get_equipment_perk
 inlineCloudFunction:
   executeFunction: ActionsOnGoogleFulfillment
