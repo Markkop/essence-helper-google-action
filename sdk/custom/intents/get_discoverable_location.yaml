@@ -1,0 +1,75 @@
+parameters:
+- name: discoverable
+  type:
+    name: discoverable
+trainingPhrases:
+- ($discoverable 'apple' auto=false)
+- location
+- locations
+- cooking ingredient
+- cooking ingredients
+- item
+- items
+- ingredient
+- ingredients
+- cooking
+- source
+- sources
+- what is the location of ($discoverable 'apple' auto=false)
+- the location of the item ($discoverable 'apple' auto=false)
+- the location of item ($discoverable 'apple' auto=false)
+- the location of ($discoverable 'apple' auto=false)
+- the location of the ($discoverable 'apple' auto=false)
+- the location of ($discoverable 'apple' auto=false) item
+- get the item ($discoverable 'apple' auto=false)
+- get the item ($discoverable 'apple' auto=false) location
+- get the ($discoverable 'apple' auto=false) location
+- get where the ($discoverable 'apple' auto=false) is located
+- get where ($discoverable 'apple' auto=false) is located
+- get where ($discoverable 'apple' auto=false) are located
+- get where I can find ($discoverable 'apple' auto=false)
+- get ($discoverable 'apple' auto=false) location
+- get the location of the item ($discoverable 'apple' auto=false)
+- get the location of item ($discoverable 'apple' auto=false)
+- get the location of ($discoverable 'apple' auto=false)
+- get the location of the ($discoverable 'apple' auto=false)
+- get the location of ($discoverable 'apple' auto=false) item
+- give me the item ($discoverable 'apple' auto=false)
+- give me the item ($discoverable 'apple' auto=false) location
+- give me the ($discoverable 'apple' auto=false) location
+- give me where the ($discoverable 'apple' auto=false) is located
+- give me where ($discoverable 'apple' auto=false) is located
+- give me where ($discoverable 'apple' auto=false) are located
+- give me where I can find ($discoverable 'apple' auto=false)
+- give me ($discoverable 'apple' auto=false) location
+- give me the location of the item ($discoverable 'apple' auto=false)
+- give me the location of item ($discoverable 'apple' auto=false)
+- give me the location of ($discoverable 'apple' auto=false)
+- give me the location of the ($discoverable 'apple' auto=false)
+- give me the location of ($discoverable 'apple' auto=false) item
+- tell me the item ($discoverable 'apple' auto=false)
+- tell me the item ($discoverable 'apple' auto=false) location
+- tell me the ($discoverable 'apple' auto=false) location
+- tell me where the ($discoverable 'apple' auto=false) is located
+- tell me where ($discoverable 'apple' auto=false) is located
+- tell me where ($discoverable 'apple' auto=false) are located
+- tell me where I can find ($discoverable 'apple' auto=false)
+- tell me ($discoverable 'apple' auto=false) location
+- tell me the location of the item ($discoverable 'apple' auto=false)
+- tell me the location of item ($discoverable 'apple' auto=false)
+- tell me the location of ($discoverable 'apple' auto=false)
+- tell me the location of the ($discoverable 'apple' auto=false)
+- tell me the location of ($discoverable 'apple' auto=false) item
+- provide me the item ($discoverable 'apple' auto=false)
+- provide me the item ($discoverable 'apple' auto=false) location
+- provide me the ($discoverable 'apple' auto=false) location
+- provide me where the ($discoverable 'apple' auto=false) is located
+- provide me where ($discoverable 'apple' auto=false) is located
+- provide me where ($discoverable 'apple' auto=false) are located
+- provide me where I can find ($discoverable 'apple' auto=false)
+- provide me ($discoverable 'apple' auto=false) location
+- provide me the location of the item ($discoverable 'apple' auto=false)
+- provide me the location of item ($discoverable 'apple' auto=false)
+- provide me the location of ($discoverable 'apple' auto=false)
+- provide me the location of the ($discoverable 'apple' auto=false)
+- provide me the location of ($discoverable 'apple' auto=false) ite

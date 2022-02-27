@@ -1,9 +1,0 @@
-parameters:
-- name: color
-  type:
-    name: color
-trainingPhrases:
-- change color to ($color 'red' auto=true)
-- ($color 'green' auto=true)
-- set tint to ($color 'blue' auto=true)
-- change the triangles color to ($color 'red' auto=true)
