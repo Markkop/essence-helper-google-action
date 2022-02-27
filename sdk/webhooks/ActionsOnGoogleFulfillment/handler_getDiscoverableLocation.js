@@ -24,8 +24,8 @@ exports.getDiscoverableLocationHandler = (conv) => {
   }
 
   const discoverableText = getDiscoverableText(discoverable)
-  const accordingToSource = t(ACCORDING_TO_SOURCE, { source: 'ZenithMMO Fandom Wiki' })
-  const effectSpeakOutput = t(SOURCE, { sourceText: discoverableText })
+  const accordingToSource = t('ACCORDING_TO_SOURCE', { source: 'ZenithMMO Fandom Wiki' })
+  const effectSpeakOutput = t('SOURCE', { sourceText: discoverableText })
   const speakOutput = `${accordingToSource}, ${effectSpeakOutput}`
   conv.add(speakOutput);
 }
