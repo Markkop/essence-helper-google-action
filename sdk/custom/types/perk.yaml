@@ -1,74 +1,17 @@
 synonym:
   entities:
-    well_rounded:
-      synonyms:
-      - Well Rounded
-    warlock:
-      synonyms:
-      - Warlock
-    brawler:
-      synonyms:
-      - Brawler
-    exemplar:
-      synonyms:
-      - Exemplar
-    mighty:
-      synonyms:
-      - Mighty
-    brainiac:
-      synonyms:
-      - Brainiac
-    vanguard:
-      synonyms:
-      - Vanguard
-    eagle_Eye:
-      synonyms:
-      - Eagle Eye
-    slayer:
-      synonyms:
-      - Slayer
-    sadistic:
-      synonyms:
-      - Sadistic
-    sprinter:
-      synonyms:
-      - Sprinter
-    oxygenator:
-      synonyms:
-      - Oxygenator
-    lightfoot:
-      synonyms:
-      - Lightfoot
-    steadfast:
-      synonyms:
-      - Steadfast
-    automend:
-      synonyms:
-      - Automend
-    essence Flow:
-      synonyms:
-      - Essence Flow
-    shell:
-      synonyms:
-      - Shell
-    robust:
-      synonyms:
-      - Robust
     assistant:
       synonyms:
       - Assistant
-    brutal:
+    automend:
       synonyms:
-      - Brutal
-    bastion:
-      synonyms:
-      - Bastion
-    ferocious:
-      synonyms:
-      - Ferocious
+      - Automend
     banshees_bellow:
       synonyms:
       - Banshee's Bellow
+    bastion:
+      synonyms:
+      - Bastion
     blood Thief:
       synonyms:
       - Blood Thief
@@ -78,9 +21,18 @@ synonym:
     brain Freeze:
       synonyms:
       - Brain Freeze
+    brainiac:
+      synonyms:
+      - Brainiac
+    brawler:
+      synonyms:
+      - Brawler
     breath Stealer:
       synonyms:
       - Breath Stealer
+    brutal:
+      synonyms:
+      - Brutal
     bunker:
       synonyms:
       - Bunker
@@ -96,9 +48,21 @@ synonym:
     defiant:
       synonyms:
       - Defiant
+    eagle_Eye:
+      synonyms:
+      - Eagle Eye
+    essence Flow:
+      synonyms:
+      - Essence Flow
     essence_thief:
       synonyms:
       - Essence Thief
+    exemplar:
+      synonyms:
+      - Exemplar
+    ferocious:
+      synonyms:
+      - Ferocious
     fighting_spirit:
       synonyms:
       - Fighting Spirit
@@ -120,34 +84,70 @@ synonym:
     kingmaker:
       synonyms:
       - Kingmaker
+    lightfoot:
+      synonyms:
+      - Lightfoot
     marrow_stealer:
       synonyms:
       - Marrow Stealer
+    mighty:
+      synonyms:
+      - Mighty
     mind_meld:
       synonyms:
       - Mind Meld
+    oxygenator:
+      synonyms:
+      - Oxygenator
     pain_link:
       synonyms:
       - Pain Link
     pit_fighter:
       synonyms:
       - Pit Fighter
+    robust:
+      synonyms:
+      - Robust
+    sadistic:
+      synonyms:
+      - Sadistic
     scatter:
       synonyms:
       - Scatter
+    shell:
+      synonyms:
+      - Shell
     shelter:
       synonyms:
       - Shelter
+    slayer:
+      synonyms:
+      - Slayer
     soul_shock:
       synonyms:
       - Soul Shock
     spirit_meld:
       synonyms:
       - Spirit Meld
+    sprinter:
+      synonyms:
+      - Sprinter
+    steadfast:
+      synonyms:
+      - Steadfast
     super_heated:
       synonyms:
       - Super Heated
     thick_as_thieves:
       synonyms:
       - Thick As Thieves
+    vanguard:
+      synonyms:
+      - Vanguard
+    warlock:
+      synonyms:
+      - Warlock
+    well_rounded:
+      synonyms:
+      - Well Rounded
   matchType: EXACT_MATCH

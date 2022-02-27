@@ -6,5 +6,6 @@ handlers:
 - name: change_color
 - name: start_spin
 - name: stop_spin
+- name: perk
 inlineCloudFunction:
   executeFunction: ActionsOnGoogleFulfillment

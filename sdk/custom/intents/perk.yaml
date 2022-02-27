@@ -1,1 +1,7 @@
-{}
+parameters:
+- name: perk
+  type:
+    name: perk
+trainingPhrases:
+- get the effect of the equipment perk ($perk 'shell' auto=false)
+- perk

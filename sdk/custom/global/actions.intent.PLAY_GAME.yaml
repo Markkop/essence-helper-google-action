@@ -1,3 +1,0 @@
-handler:
-  webhookHandler: welcome
-transitionToScene: Game

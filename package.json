@@ -14,8 +14,8 @@
     "deploy": "firebase deploy",
     "deploy-project": "firebase deploy --project essence-helper --only hosting",
     "push": "cd sdk && gactions push && cd ..",
-    "pull": "cd sdk && gactions pull && cd ..",
-    "preview": "cd sdk && gactions deploy preview && cd .."
+    "pull": "cd sdk && gactions pull -f && cd ..",
+    "preview": "cd sdk && gactions push && gactions deploy preview && cd .."
   },
   "devDependencies": {
     "eslint": "^5.2.0",
