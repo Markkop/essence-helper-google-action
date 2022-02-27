@@ -1,4 +1,4 @@
-const discoverables = require('./data_discoverables')
+const { discoverables } = require('./data_discoverables')
 
 exports.getDiscoverable = (name) => {
   return discoverables.find(item => item.title.toLowerCase() === name.toLowerCase())

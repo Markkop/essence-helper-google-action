@@ -2,5 +2,6 @@ handlers:
 - name: welcome
 - name: fallback
 - name: get_equipment_perk
+- name: get_discoverable_location
 inlineCloudFunction:
   executeFunction: ActionsOnGoogleFulfillment
