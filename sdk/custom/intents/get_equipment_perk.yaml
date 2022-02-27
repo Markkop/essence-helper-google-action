@@ -1,0 +1,47 @@
+parameters:
+- name: get_equipment_perk
+  type:
+    name: perk
+trainingPhrases:
+- equipment
+- equipment perk
+- equipment perks
+- perk
+- perks
+- effect
+- effects
+- the equipment perk ($perk 'shell' auto=false)
+- the effect of the equipment perk ($perk 'shell' auto=false)
+- the effect of the perk ($perk 'shell' auto=false)
+- the effect of perk ($perk 'shell' auto=false)
+- the effect of ($perk 'shell' auto=false)
+- the effect of the ($perk 'shell' auto=false)
+- the effect of ($perk 'shell' auto=false) perk
+- get the equipment perk ($perk 'shell' auto=false)
+- get the effect of the equipment perk ($perk 'shell' auto=false)
+- get the effect of the perk ($perk 'shell' auto=false)
+- get the effect of perk ($perk 'shell' auto=false)
+- get the effect of ($perk 'shell' auto=false)
+- get the effect of the ($perk 'shell' auto=false)
+- get the effect of ($perk 'shell' auto=false) perk
+- give me the equipment perk ($perk 'shell' auto=false)
+- give me the effect of the equipment perk ($perk 'shell' auto=false)
+- give me the effect of the perk ($perk 'shell' auto=false)
+- give me the effect of perk ($perk 'shell' auto=false)
+- give me the effect of ($perk 'shell' auto=false)
+- give me the effect of the ($perk 'shell' auto=false)
+- give me the effect of ($perk 'shell' auto=false) perk
+- tell me the equipment perk ($perk 'shell' auto=false)
+- tell me the effect of the equipment perk ($perk 'shell' auto=false)
+- tell me the effect of the perk ($perk 'shell' auto=false)
+- tell me the effect of perk ($perk 'shell' auto=false)
+- tell me the effect of ($perk 'shell' auto=false)
+- tell me the effect of the ($perk 'shell' auto=false)
+- tell me the effect of ($perk 'shell' auto=false) perk
+- provide me the equipment perk ($perk 'shell' auto=false)
+- provide me the effect of the equipment perk ($perk 'shell' auto=false)
+- provide me the effect of the perk ($perk 'shell' auto=false)
+- provide me the effect of perk ($perk 'shell' auto=false)
+- provide me the effect of ($perk 'shell' auto=false)
+- provide me the effect of the ($perk 'shell' auto=false)
+- provide me the effect of ($perk 'shell' auto=false) per

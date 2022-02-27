@@ -1,4 +1,4 @@
 intentEvents:
 - handler:
-    webhookHandler: perk
-  intent: perk
+    webhookHandler: get_equipment_perk
+  intent: get_equipment_perk

@@ -366,13 +366,18 @@ app.handle('fallback', (conv) => {
   conv.add(`I don't understand. You can change my color or pause spinning.`);
 });
 
-app.handle('perk', (conv) => {
+app.handle('get_equipment_perk', (conv) => {
   const perk =
     conv.intent.params.perk? conv.intent.params.perk.resolved : null;
+
+  if (!perk) {
+    conv.add(`Please, provide the name of an equipment perk.`);
+    return
+  }
+
   const foundPerk = perks.find(listedPerk => listedPerk.name.toLowerCase() === perk.toLowerCase());
   if (!foundPerk) {
     conv.add(`Sorry, I don't know that perk. Try again.`);
-    conv.add(new Canvas());
     return;
   }
  	conv.add(`This perk's effect: ${foundPerk.effect}`);
