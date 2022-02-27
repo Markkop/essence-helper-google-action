@@ -1,8 +1,9 @@
 parameters:
-- name: get_equipment_perk
+- name: perk
   type:
     name: perk
 trainingPhrases:
+- ($perk 'shell' auto=false)
 - equipment
 - equipment perk
 - equipment perks
