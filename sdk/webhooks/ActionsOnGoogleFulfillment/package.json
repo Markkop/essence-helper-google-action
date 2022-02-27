@@ -7,13 +7,12 @@
   "engines": {
     "node": "14.17.2"
   },
-  "scripts": {
-    "compile": "tsc"
-  },
   "dependencies": {
     "@assistant/conversation": "^3.8.0",
     "firebase-admin": "~8.12.1",
-    "firebase-functions": "^3.6.2",
+    "firebase-functions": "^3.6.2"
+  },
+  "devDependencies": {
     "typescript": "^4.5.5"
   }
 }

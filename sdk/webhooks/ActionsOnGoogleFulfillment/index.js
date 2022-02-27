@@ -1,3 +1,4 @@
-const action = require('./dist/src/index.js')
+const functions = require('firebase-functions');
+const { app } = require('./app');
 
-module.exports = action
+exports.ActionsOnGoogleFulfillment = functions.https.onRequest(app);

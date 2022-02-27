@@ -1,8 +1,7 @@
-import { ConversationV3 } from "@assistant/conversation";
-import perks from '../data/perks.json'
-import { getIntentParameter } from "../helpers/parameters";
+const { perks } = require('./perks');
+const { getIntentParameter } = require("./helpers")
 
-export function getEquipmentPerkHandler(conv: ConversationV3) {
+exports.getEquipmentPerkHandler = (conv) => {
   const perk = getIntentParameter(conv, 'perk')
 
   if (!perk) {
@@ -17,3 +16,4 @@ export function getEquipmentPerkHandler(conv: ConversationV3) {
   }
   conv.add(`This perk's effect: ${foundPerk.effect}`);
 }
+

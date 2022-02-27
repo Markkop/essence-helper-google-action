@@ -1,4 +1,4 @@
-[
+exports.perks = [
   {
     "name": "Banshee's Bellow",
     "effect": "When struck cause [150% AP stagger] in a [5m AoE]. (15s CD)",
