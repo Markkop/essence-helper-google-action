@@ -13,14 +13,14 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-import {Action} from './action.js';
-import {Scene} from './scene.js';
+import {Action} from './action.js'
+import {Scene} from './scene.js'
 
 window.addEventListener('load', () => {
-  window.scene = new Scene();
+  window.scene = new Scene()
 
   // Set Google Assistant Canvas Action at scene level
-  window.scene.action = new Action(scene);
+  window.scene.action = new Action(scene)
   // Call setCallbacks to register interactive canvas
-  window.scene.action.setCallbacks();
-});
+  window.scene.action.setCallbacks()
+})

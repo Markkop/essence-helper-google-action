@@ -6,5 +6,10 @@
   "extends": ["google"],
   "env": {
     "node": true
+  },
+  "rules": {
+    "object-curly-spacing": 0,
+    "max-len": ["error", { "code": 120 }],
+    "semi": ["error", "never"]
   }
 }

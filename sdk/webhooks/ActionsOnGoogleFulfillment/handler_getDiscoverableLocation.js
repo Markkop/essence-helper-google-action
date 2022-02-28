@@ -1,25 +1,24 @@
-const { t } = require('i18next');
-const { getIntentParameter } = require("./helpers");
-const { getDiscoverable, getDiscoverableText } = require('./helper_discoverable');
+const { t } = require('i18next')
+const { getIntentParameter } = require('./helpers')
+const { getDiscoverable, getDiscoverableText } = require('./helper_discoverable')
 
 exports.getDiscoverableLocationHandler = (conv) => {
   const providedDiscoverableName = getIntentParameter(conv, 'discoverable')
 
   if (!providedDiscoverableName) {
-    conv.add(t('ASK_FOR_DISCOVERABLE'));
+    conv.add(t('ASK_FOR_DISCOVERABLE'))
     return
   }
 
-  const discoverable = getDiscoverable(providedDiscoverableName);
+  const discoverable = getDiscoverable(providedDiscoverableName)
 
   if (!discoverable) {
-    conv.add(t('ITEM_NOT_FOUND'));
+    conv.add(t('ITEM_NOT_FOUND'))
     return
   }
 
-  const discoverableName = discoverable.title
   if (!discoverable.additionalText && !discoverable.sources.length) {
-    conv.add(t('UNKNOWN_SOURCE'));
+    conv.add(t('UNKNOWN_SOURCE'))
     return
   }
 
@@ -27,6 +26,6 @@ exports.getDiscoverableLocationHandler = (conv) => {
   const accordingToSource = t('ACCORDING_TO_SOURCE', { source: 'ZenithMMO Fandom Wiki' })
   const effectSpeakOutput = t('SOURCE', { sourceText: discoverableText })
   const speakOutput = `${accordingToSource}, ${effectSpeakOutput}`
-  conv.add(speakOutput);
+  conv.add(speakOutput)
 }
 

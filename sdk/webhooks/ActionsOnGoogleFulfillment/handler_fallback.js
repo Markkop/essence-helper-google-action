@@ -1,5 +1,5 @@
-const { t } = require('i18next');
+const {t} = require('i18next')
 
 exports.fallbackHandler = (conv) => {
-  conv.add(t('FALLBACK'));
+  conv.add(t('FALLBACK'))
 }
