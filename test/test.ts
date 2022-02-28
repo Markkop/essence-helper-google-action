@@ -1,108 +1,40 @@
 import 'mocha';
 import { ActionsOnGoogleTestManager } from '@assistant/conversation-testing';
-import { resolve } from 'path';
-import { readFileSync } from 'fs';
-import { load } from 'js-yaml';
+import { afterEachActionsOnGoogleTest, beforeAllActionsOnGoogleTests, loadProjectSettings, startConversation } from './testUtils';
+import { testPerk } from './perks';
 
-const DEFAULT_LOCALE = 'en-US';
-const DEFAULT_SURFACE = 'SMART_DISPLAY'; // Should be PHONE, but: https://github.com/actions-on-google/assistant-conversation-testing-nodejs/issues/6
-const CONTINUE_CONVO_PROMPT =
-  'Hello Zenithian. I can get you the effects of an equipment perk or the location of a cooking ingredient. Which one would you like to know?';
-
-let PROJECT_ID: string;
-let TRIGGER_PHRASE: string;
-
-// tslint:disable:only-arrow-functions
-
-describe('My Action Test Suite', function () {
-  // Set the timeout for each test run to 60s.
+describe('Essence Helper Test Suite', function () {
   this.timeout(60000);
-  let test: ActionsOnGoogleTestManager;
+  const { projectId, triggerPhrase } = loadProjectSettings();
+  const test = new ActionsOnGoogleTestManager({ projectId });
 
-  async function startConversation() {
-    await test.sendQuery(TRIGGER_PHRASE);
-    test.assertSpeech(CONTINUE_CONVO_PROMPT);
-    test.assertText(CONTINUE_CONVO_PROMPT);
-    test.assertIntent('actions.intent.MAIN');
-    test.assertScene('Start');
-  }
+  before(() => beforeAllActionsOnGoogleTests(test));
+  afterEach(() => afterEachActionsOnGoogleTest(test));
 
-  // Load project ID and sample display name from project settings.
-  function loadProjectSettings() {
-    try {
-      let fileContents = readFileSync(
-        resolve(__dirname, '../sdk/settings/settings.yaml'), 'utf8');
-      let data = load(fileContents) as any;
-      PROJECT_ID = data.projectId;
-      TRIGGER_PHRASE = `Talk to ${data.localizedSettings.displayName}`;
-    } catch (e) {
-      console.log(e);
-    }
-  }
-
-  before('before all', async function () {
-    // Load project settings to read project ID and trigger phrase.
-    loadProjectSettings();
-    test = new ActionsOnGoogleTestManager({ projectId: PROJECT_ID });
-    await test.writePreviewFromDraft();
-    test.setSuiteLocale(DEFAULT_LOCALE);
-    test.setSuiteSurface(DEFAULT_SURFACE);
-  });
-
-  afterEach('post test cleans', async function () {
-    test.cleanUpAfterTest();
-  });
-
-  it('trigger only', async function () {
+  it('works on Smart Display devices', async () => {
     test.setTestSurface('SMART_DISPLAY');
-    await startConversation();
+    await startConversation(test, triggerPhrase);
     await test.sendStop();
     test.assertConversationEnded();
   });
 
-  it('retrieves perk effect from Start scene', async function () {
-    await startConversation();
-    await test.sendQuery('Equipment Perk');
-    test.assertSpeech('Ok, tell me the name of the equipment perk');
-    await test.sendQuery('Shell');
-    test.assertText('shell|Shell', { isRegexp: true });
-    test.assertConversationEnded();
-  });
+  describe('Perk intent', () => testPerk(test, triggerPhrase))
 
-  it('retrieves perk effect from global intent', async function () {
-    await startConversation();
-    await test.sendQuery('shell');
-    test.assertText('shell|Shell', { isRegexp: true });
-    test.assertConversationEnded();
-  });
-
-  it('retrieves perk effect from Start scene after slot input retry', async function () {
-    await startConversation();
-    await test.sendQuery('Equipment Perk');
-    test.assertSpeech('Ok, tell me the name of the equipment perk');
-    await test.sendQuery('asdasdasd');
-    test.assertSpeech("Sorry, I don't know that. Try again.");
-    await test.sendQuery('shell');
-    test.assertText('shell|Shell', { isRegexp: true });
-    test.assertConversationEnded();
-  });
-
-
-  it.skip('display simple', async function () {
-    await startConversation();
-    await test.sendQuery('Equipment Perk');
-    const expectedExact =
-      `This is the first simple response.This is the last simple response. ${CONTINUE_CONVO_PROMPT}`;
-    // const expectedRegex =
-    //   `This is .* ${CONTINUE_CONVO_PROMPT}`;
-    // Assert speech is exact match using `isExact` argument.
-    test.assertSpeech(expectedExact, { isExact: true });
-    // Assert text with regex using `isRegex` argument.
-    // test.assertText(expectedRegex, { isRegexp: true });
-    test.assertIntent('simple');
-    await test.sendStop();
-    test.assertConversationEnded();
-  });
+  // it('display simple', async function () {
+  //   await startConversation(test);
+  //   await test.sendQuery('Equipment Perk');
+  //   const expectedExact =
+  //     `This is the first simple response.This is the last simple response. ${CONTINUE_CONVO_PROMPT}`;
+  //   // const expectedRegex =
+  //   //   `This is .* ${CONTINUE_CONVO_PROMPT}`;
+  //   // Assert speech is exact match using `isExact` argument.
+  //   test.assertSpeech(expectedExact, { isExact: true });
+  //   // Assert text with regex using `isRegex` argument.
+  //   // test.assertText(expectedRegex, { isRegexp: true });
+  //   test.assertIntent('simple');
+  //   await test.sendStop();
+  //   test.assertConversationEnded();
+  // });
 
   // it('display image', async function () {
   //   await startConversation();

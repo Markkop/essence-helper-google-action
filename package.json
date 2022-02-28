@@ -17,7 +17,7 @@
     "preview": "cd sdk && gactions deploy preview && cd ..",
     "push-and-preview": "npm run push && npm run preview",
     "enable-activity-controls": "env GOOGLE_APPLICATION_CREDENTIALS=$PWD/service_account.json web-and-app-activity-controls",
-    "test": "npm run lint && env GOOGLE_APPLICATION_CREDENTIALS=$PWD/service_account.json mocha --recursive --require ts-node/register test/*.ts"
+    "test": "npm run lint && env GOOGLE_APPLICATION_CREDENTIALS=$PWD/service_account.json mocha --recursive --require ts-node/register test/test.ts"
   },
   "devDependencies": {
     "@assistant/conversation-testing": "^1.0.0",
