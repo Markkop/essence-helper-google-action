@@ -1,0 +1,24 @@
+conditionalEvents:
+- condition: scene.slots.status == "FINAL"
+  handler:
+    webhookHandler: get_equipment_perk
+  transitionToScene: actions.scene.END_CONVERSATION
+slots:
+- commitBehavior:
+    writeSessionParam: perk
+  name: perk
+  promptSettings:
+    initialPrompt:
+      staticPrompt:
+        candidates:
+        - promptResponse:
+            content:
+              card:
+                text: Card Content
+                title: Card Title
+            firstSimple:
+              variants:
+              - speech: Ok, tell me the name of the equipment perk
+  required: true
+  type:
+    name: perk

@@ -1,0 +1,24 @@
+conditionalEvents:
+- condition: scene.slots.status == "FINAL"
+  handler:
+    webhookHandler: get_discoverable_location
+  transitionToScene: actions.scene.END_CONVERSATION
+slots:
+- commitBehavior:
+    writeSessionParam: discoverable
+  name: discoverable
+  promptSettings:
+    initialPrompt:
+      staticPrompt:
+        candidates:
+        - promptResponse:
+            content:
+              card:
+                text: Card Content
+                title: Card Title
+            firstSimple:
+              variants:
+              - speech: Ok, tell me the name of the cooking ingredient.
+  required: true
+  type:
+    name: discoverable

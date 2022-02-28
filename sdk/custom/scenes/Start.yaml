@@ -1,9 +1,5 @@
 intentEvents:
-- handler:
-    webhookHandler: get_equipment_perk
-  intent: get_equipment_perk
-  transitionToScene: actions.scene.END_CONVERSATION
-- handler:
-    webhookHandler: get_discoverable_location
-  intent: get_discoverable_location
-  transitionToScene: actions.scene.END_CONVERSATION
+- intent: get_equipment_perk
+  transitionToScene: get_equipment_perkSlotFilling
+- intent: get_discoverable_location
+  transitionToScene: get_discoverable_locationSlotFilling

@@ -1,2 +1,4 @@
 custom:
   actions.intent.MAIN: {}
+  get_discoverable_location: {}
+  get_equipment_perk: {}
