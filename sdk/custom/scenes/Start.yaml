@@ -2,6 +2,8 @@ intentEvents:
 - handler:
     webhookHandler: get_equipment_perk
   intent: get_equipment_perk
+  transitionToScene: actions.scene.END_CONVERSATION
 - handler:
     webhookHandler: get_discoverable_location
   intent: get_discoverable_location
+  transitionToScene: actions.scene.END_CONVERSATION

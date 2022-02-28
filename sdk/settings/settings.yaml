@@ -1,7 +1,15 @@
 category: GAMES_AND_TRIVIA
 defaultLocale: en
 localizedSettings:
+  developerEmail: me@markkop.dev
+  developerName: Marcelo Kopmann
   displayName: Essence Helper
+  fullDescription: A Google Action that provides information about the Zenith VR MMORPG.
+  privacyPolicyUrl: https://www.privacypolicies.com/live/a66c45ba-65ab-4375-96a2-1e4e720f928b
   pronunciation: Essence Helper
+  sampleInvocations:
+  - Talk to Essence Helper
+  shortDescription: A Google Action that provides information about the Zenith VR MMORPG
+  smallLogoImage: https://lh3.googleusercontent.com/oRvmwkR-Poh_Jr-ozfrDvIA81-bL5h3wx6i-MbrbHzRQWFT1drAo7WpefA4JGVHeJU9sAlq_GtJr
   voice: female_1
 projectId: essence-helper
