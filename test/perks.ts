@@ -6,7 +6,7 @@ export function testPerk(test: ActionsOnGoogleTestManager, triggerPhrase: string
   it('retrieves perk effect from Start scene', async function() {
     await startConversation(test, triggerPhrase)
     await test.sendQuery('Equipment Perk')
-    test.assertSpeech('Ok, tell me the name of the equipment perk')
+    test.assertSpeech('Please, provide the name of an equipment perk.')
     await test.sendQuery('Shell')
     test.assertText('shell|Shell', { isRegexp: true })
     test.assertConversationEnded()
@@ -22,7 +22,7 @@ export function testPerk(test: ActionsOnGoogleTestManager, triggerPhrase: string
   it('retrieves perk effect from Start scene after slot input retry', async function() {
     await startConversation(test, triggerPhrase)
     await test.sendQuery('Equipment Perk')
-    test.assertSpeech('Ok, tell me the name of the equipment perk')
+    test.assertSpeech('Please, provide the name of an equipment perk.')
     await test.sendQuery('asdasdasd')
     test.assertSpeech('Sorry, I don\'t know that. Try again.')
     await test.sendQuery('shell')
