@@ -9,9 +9,8 @@
   "scripts": {
     "lint": "eslint \"**/*.js\"",
     "lint:fix": "eslint --fix \"**/*.js\"",
-    "serve": "firebase serve",
-    "deploy": "firebase deploy",
-    "deploy-project": "firebase deploy --project essence-helper --only functions",
+    "serve": "firebase serve --project essence-helper ",
+    "deploy": "firebase deploy --project essence-helper ",
     "push": "gactions push",
     "pull": "gactions pull -f --clean",
     "preview": "gactions deploy preview",
