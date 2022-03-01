@@ -10,6 +10,8 @@ export enum Strings {
   SKILL_NAME = 'SKILL_NAME',
   PERK = 'PERK',
   SOURCE = 'SOURCE',
+  ASK_FOR_PERK = 'ASK_FOR_PERK',
+  ASK_FOR_DISCOVERABLE = 'ASK_FOR_PERK',
   UNKNOWN_PERK_EFFECT = 'UNKNOWN_PERK_EFFECT',
   UNKNOWN_SOURCE = 'UNKNOWN_SOURCE',
   PERK_NOT_FOUND = 'PERK_NOT_FOUND',
@@ -17,14 +19,20 @@ export enum Strings {
   ACCORDING_TO_SOURCE = 'ACCORDING_TO_SOURCE',
 }
 interface IStrings {
-  [Strings.HELP]: string;
-  [Strings.ERROR]: string;
-  [Strings.FALLBACK]: string;
-  [Strings.SKILL_NAME]: string;
+  [Strings.LAUNCH]: string;
   [Strings.PERK]: string;
+  [Strings.SOURCE]: string;
+  [Strings.ASK_FOR_PERK]: string;
+  [Strings.ASK_FOR_DISCOVERABLE]: string;
   [Strings.UNKNOWN_PERK_EFFECT]: string;
-  [Strings.PERK_NOT_FOUND]: string;
+  [Strings.UNKNOWN_SOURCE]: string;
   [Strings.ACCORDING_TO_SOURCE]: string;
+  [Strings.PERK_NOT_FOUND]: string;
+  [Strings.ITEM_NOT_FOUND]: string;
+  [Strings.SKILL_NAME]: string;
+  [Strings.HELP]: string;
+  [Strings.FALLBACK]: string;
+  [Strings.ERROR]: string;
 }
 
 const english = {
