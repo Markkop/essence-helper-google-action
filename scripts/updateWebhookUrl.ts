@@ -15,6 +15,7 @@ export function updateWebhookUrl(url: string) {
   }
   writeFileSync(webhookSettingsPath, dump(newSettings, {
     lineWidth: -1,
+    noArrayIndent: true,
   }))
   console.log('Webhook URL updated to:', url)
 }
