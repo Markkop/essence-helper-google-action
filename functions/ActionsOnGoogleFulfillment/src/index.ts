@@ -1,9 +1,10 @@
 import express from 'express'
-import bodyParser from 'body-parser'
 import * as functions from 'firebase-functions'
 import ActionsOnGoogleApp from './app'
 
-const expressApp = express().use(bodyParser.json())
+const expressApp = express()
+
+expressApp.use(express.json())
 
 expressApp.post('/', ActionsOnGoogleApp)
 
