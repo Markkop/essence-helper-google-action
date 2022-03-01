@@ -23,4 +23,4 @@ app.handle('fallback', fallbackHandler)
 app.handle('get_equipment_perk', getEquipmentPerkHandler)
 app.handle('get_discoverable_location', getDiscoverableLocationHandler)
 
-exports.app = app
+module.exports = app

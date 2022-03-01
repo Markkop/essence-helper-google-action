@@ -1,24 +1,44 @@
 # 🥽 Essence Helper (Google Action)
 
-A Google Action that provides information about the Zenith VR MMORPG.
+A Google Action that provides information about the Zenith VR MMORPG.  
+Check it's Alexa Skill version [here](https://github.com/Markkop/essence-helper-alexa-skill).
 
-# Get the Skill
+## Get the Skill
 
 Soon
 
-# Usage
+## Usage
 
 ```
-"Ok Google, talk to essence helper"
-"Ok Google, talk to essence helper and tell me the effect of the perk shell"
-"Ok Google, talk to Essence Helper and provide me the effect of blood thief"
-"Ok Google, talk to Essence Helper and get the effect of the perk brain freeze"
+"Ok Google, talk to Essence helper"
+"Ok Google, ask Essence Helper to tell me the effect of the perk shell"
+"Ok Google, ask Essence Helper to provide me the effect of blood thief"
+"Ok Google, ask Essence Helper to get the effect of the perk brain freeze"
+"Ok Google, ask Essence Helper to get the location of apples"
+"Ok Google, ask Essence Helper to provide me lemons location"
 ```
 
-# How to develop
+## Development and Testing
 
-## Testing
+### Local Development
 
-In order to run automated tests, you'll need to create a service account for this project.
-Please follow [these instructions](https://github.com/actions-on-google/actions-builder-conversation-components-nodejs/blob/master/README.md#running-tests).
+- Setup a Ngrok config with token in your computer following [these instructions](https://dashboard.ngrok.com/get-started/setup)
+- Run `npm run tunnel` to start Ngrok
+- Run `npm run dev` to update Webhook URL with Ngrok public URL and watch for code changes
 
+### Testing
+
+- Setup a Service Account following [these instructions](https://github.com/actions-on-google/actions-builder-conversation-components-nodejs/blob/master/README.md#running-tests)
+- If you want to run automated tests with remote code: run `npm run set:webhook:prod`
+- If you want to run automated tests with local code: run `npm run set:webhook:dev`
+- Run `npm run test`
+
+### Deployment
+
+- Update `scripts/updateWebhookUrlToProduction.ts` file with the Webhook Production URL
+- Run `npm run prod` to update it in the remote project
+- Proceed with Google's verification process in [Google Actions Console](https://console.actions.google.com/)
+### References:
+
+- [Actions SDK and Builder quick start guide](https://developers.google.com/assistant/conversational/quickstart)
+- [How to implement local fulfillment for Google Assistant actions using Dialogflow](https://www.freecodecamp.org/news/how-to-implement-local-fulfillment-for-google-assistant-actions-using-dialogflow-1b3b3a13075f/)

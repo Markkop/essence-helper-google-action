@@ -10,13 +10,19 @@
     "lint": "eslint \"**/*.js\"",
     "lint:fix": "eslint --fix \"**/*.js\"",
     "serve": "firebase serve --project essence-helper ",
-    "deploy": "firebase deploy --project essence-helper ",
+    "deploy": "firebase --project essence-helper deploy --only functions",
     "push": "gactions push",
     "pull": "gactions pull -f --clean",
     "preview": "gactions deploy preview",
     "push-and-preview": "npm run push && npm run preview",
     "enable-activity-controls": "env GOOGLE_APPLICATION_CREDENTIALS=$PWD/service_account.json web-and-app-activity-controls",
-    "test": "npm run lint && env GOOGLE_APPLICATION_CREDENTIALS=$PWD/service_account.json mocha --recursive --require ts-node/register test/test.ts"
+    "test": "npm run lint && env GOOGLE_APPLICATION_CREDENTIALS=$PWD/service_account.json mocha --recursive --require ts-node/register test/test.ts",
+    "logs": "firebase functions:log",
+    "tunnel": "ngrok http 8000",
+    "set:webhook:dev": "ts-node scripts/updateWebhookUrlToDevelopment.ts && npm run push",
+    "set:webhook:prod": "ts-node scripts/updateWebhookUrlToProduction.ts && npm run push",
+    "dev": "npm run set:webhook:dev && export IS_LOCAL_DEV=true && nodemon sdk/webhooks/ActionsOnGoogleFulfillment/index.js",
+    "prod": "npm run set:webhook:prod && npm run deploy"
   },
   "devDependencies": {
     "@assistant/conversation-testing": "^1.0.0",
@@ -26,10 +32,13 @@
     "eslint": "^5.16.0",
     "eslint-config-google": "^0.9.1",
     "mocha": "^9.2.1",
+    "ngrok": "^4.3.0",
+    "nodemon": "^2.0.15",
     "ts-node": "^10.5.0",
     "typescript": "^4.5.5"
   },
   "dependencies": {
+    "axios": "^0.26.0",
     "js-yaml": "^4.1.0"
   }
 }

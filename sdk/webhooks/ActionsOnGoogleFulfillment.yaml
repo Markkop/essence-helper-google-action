@@ -1,7 +1,8 @@
 handlers:
-- name: welcome
-- name: fallback
-- name: get_equipment_perk
-- name: get_discoverable_location
-inlineCloudFunction:
-  executeFunction: ActionsOnGoogleFulfillment
+  - name: welcome
+  - name: fallback
+  - name: get_equipment_perk
+  - name: get_discoverable_location
+httpsEndpoint:
+  baseUrl: https://us-central1-essence-helper.cloudfunctions.net/ActionsOnGoogleFulfillment
+  endpointApiVersion: 2

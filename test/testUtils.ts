@@ -31,7 +31,8 @@ export function loadProjectSettings(): Record<string, string> {
 }
 
 export async function beforeAllActionsOnGoogleTests(test: ActionsOnGoogleTestManager) {
-  await test.writePreviewFromDraft();
+  // writePreviewFromDraft is not needed when using custom webhook URL.
+  // await test.writePreviewFromDraft();
   test.setSuiteLocale(DEFAULT_LOCALE);
   test.setSuiteSurface(DEFAULT_SURFACE);
 }
