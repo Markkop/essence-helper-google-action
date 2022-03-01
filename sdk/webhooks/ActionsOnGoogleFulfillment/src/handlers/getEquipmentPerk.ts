@@ -1,4 +1,4 @@
-import { ConversationV3 } from '@assistant/conversation'
+import { ConversationV3, Card } from '@assistant/conversation'
 import { Strings } from '../helpers/strings'
 import { getIntentParameter } from '../helpers/parameters'
 import { t } from 'i18next'
@@ -26,4 +26,8 @@ export function getEquipmentPerkHandler(conv: ConversationV3) {
   const effectSpeakOutput = t(Strings.PERK, { indefiniteArticle, perkName, perkType, perkEffect })
   const speakOutput = `${accordingToSource}, ${effectSpeakOutput}`
   conv.add(speakOutput)
+  conv.add(new Card({
+    title: perkName,
+    text: speakOutput,
+  }))
 }

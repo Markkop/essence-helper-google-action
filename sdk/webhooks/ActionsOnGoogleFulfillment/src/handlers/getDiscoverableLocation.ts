@@ -1,4 +1,4 @@
-import { ConversationV3 } from '@assistant/conversation'
+import { Card, ConversationV3 } from '@assistant/conversation'
 import { Strings } from '../helpers/strings'
 import { t } from 'i18next'
 import { getDiscoverable, getDiscoverableText } from '../helpers/discoverable'
@@ -23,5 +23,9 @@ export function getDiscoverableLocationHandler(conv: ConversationV3) {
   const effectSpeakOutput = t(Strings.SOURCE, { sourceText: discoverableText })
   const speakOutput = `${accordingToSource}, ${effectSpeakOutput}`
   conv.add(speakOutput)
+  conv.add(new Card({
+    title: discoverable.title,
+    text: speakOutput,
+  }))
 }
 
