@@ -1,17 +1,67 @@
 /* eslint-disable max-len */
-export default {
-  LAUNCH: 'Hello Zenithianus. I can get you the effects of an equipment perk or the location of a cooking ingredient. Which one would you like to know?',
-  PERK: '{{perkName}} is {{indefiniteArticle}} {{perkType}} perk with the following effect: {{perkEffect}}',
-  SOURCE: '{{sourceText}}',
-  ASK_FOR_PERK: 'Please, provide the name of an equipment perk.',
-  ASK_FOR_DISCOVERABLE: 'Please, provide the name of a cooking ingredient.',
-  UNKNOWN_PERK_EFFECT: 'The effect for this perk is currently unknown.',
-  UNKNOWN_SOURCE: 'The location for this item is currently unknown.',
-  ACCORDING_TO_SOURCE: 'According to {{source}}',
-  PERK_NOT_FOUND: 'I could not find a perk with this name. Please try again.',
-  ITEM_NOT_FOUND: 'I could not find an item with this name. Please try again.',
-  SKILL_NAME: 'Essence Helper',
-  HELP: 'I can get you the effects of an equipment perk or the location of a cooking ingredient.',
-  FALLBACK: 'Sorry, I don\'t know that. Try again.',
-  ERROR: 'Sorry, I didn\'t understand. Try again.',
+
+export enum Strings {
+  LAUNCH = 'LAUNCH',
+  HELP = 'HELP',
+  ERROR = 'ERROR',
+  FALLBACK = 'FALLBACK',
+  ABOUT = 'ABOUT',
+  UNAVAILABLE_INTENT = 'UNAVAILABLE_INTENT',
+  SKILL_NAME = 'SKILL_NAME',
+  PERK = 'PERK',
+  SOURCE = 'SOURCE',
+  UNKNOWN_PERK_EFFECT = 'UNKNOWN_PERK_EFFECT',
+  UNKNOWN_SOURCE = 'UNKNOWN_SOURCE',
+  PERK_NOT_FOUND = 'PERK_NOT_FOUND',
+  ITEM_NOT_FOUND = 'ITEM_NOT_FOUND',
+  ACCORDING_TO_SOURCE = 'ACCORDING_TO_SOURCE',
 }
+interface IStrings {
+  [Strings.HELP]: string;
+  [Strings.ERROR]: string;
+  [Strings.FALLBACK]: string;
+  [Strings.SKILL_NAME]: string;
+  [Strings.PERK]: string;
+  [Strings.UNKNOWN_PERK_EFFECT]: string;
+  [Strings.PERK_NOT_FOUND]: string;
+  [Strings.ACCORDING_TO_SOURCE]: string;
+}
+
+const english = {
+  translation: {
+    LAUNCH: 'Hello Zenithian. I can get you the effects of an equipment perk or the location of a cooking ingredient. Which one would you like to know?',
+    PERK: '{{perkName}} is {{indefiniteArticle}} {{perkType}} perk with the following effect: {{perkEffect}}',
+    SOURCE: '{{sourceText}}',
+    ASK_FOR_PERK: 'Please, provide the name of an equipment perk.',
+    ASK_FOR_DISCOVERABLE: 'Please, provide the name of a cooking ingredient.',
+    UNKNOWN_PERK_EFFECT: 'The effect for this perk is currently unknown.',
+    UNKNOWN_SOURCE: 'The location for this item is currently unknown.',
+    ACCORDING_TO_SOURCE: 'According to {{source}}',
+    PERK_NOT_FOUND: 'I could not find a perk with this name. Please try again.',
+    ITEM_NOT_FOUND: 'I could not find an item with this name. Please try again.',
+    SKILL_NAME: 'Essence Helper',
+    HELP: 'I can get you the effects of an equipment perk or the location of a cooking ingredient.',
+    FALLBACK: 'Sorry, I don\'t know that. Try again.',
+    ERROR: 'Sorry, I didn\'t understand. Try again.',
+  } as IStrings,
+}
+
+export enum LocaleTypes {
+  enUS = 'en-US',
+  enAU = 'en-AU',
+  enCA = 'en-CA',
+  enIN = 'en-IN',
+  enUK = 'en-UK',
+  enGB = 'en-GB',
+}
+
+export const strings = {
+  [LocaleTypes.enUS]: english,
+  [LocaleTypes.enAU]: english,
+  [LocaleTypes.enCA]: english,
+  [LocaleTypes.enIN]: english,
+  [LocaleTypes.enUK]: english,
+  [LocaleTypes.enGB]: english,
+}
+
+
