@@ -17,7 +17,7 @@ module.exports = {
     sourceType: 'module',
   },
   ignorePatterns: [
-    '**/lib/**/*', // Ignore built files.
+    '**/lib/**/*',
     '**/node_modules/**',
   ],
   plugins: [
