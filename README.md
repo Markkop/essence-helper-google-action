@@ -1,7 +1,7 @@
 # 🥽 Essence Helper (Google Action)
 
 A Google Action that provides information about the Zenith VR MMORPG.  
-Check it's Alexa Skill version [here](https://github.com/Markkop/essence-helper-alexa-skill).
+Check its Alexa Skill version [here](https://github.com/Markkop/essence-helper-alexa-skill).
 
 ## Get the Skill
 
