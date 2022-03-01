@@ -9,7 +9,7 @@
   "scripts": {
     "lint": "eslint --ext .js,.ts .",
     "lint:fix": "eslint --ext .js,.ts . --fix",
-    "build": "npm run build --prefix sdk/webhooks/ActionsOnGoogleFulfillment",
+    "build": "npm run build --prefix functions/ActionsOnGoogleFulfillment",
     "serve": "npm run build && firebase serve --project essence-helper ",
     "deploy": "npm run build && firebase --project essence-helper deploy --only functions",
     "push": "gactions push",
@@ -22,7 +22,7 @@
     "tunnel": "ngrok http 8000",
     "set:webhook:dev": "ts-node scripts/updateWebhookUrlToDevelopment.ts && npm run push",
     "set:webhook:prod": "ts-node scripts/updateWebhookUrlToProduction.ts && npm run push",
-    "dev": "npm run set:webhook:dev && export IS_LOCAL_DEV=true && npm run dev --prefix sdk/webhooks/ActionsOnGoogleFulfillment",
+    "dev": "npm run set:webhook:dev && export IS_LOCAL_DEV=true && npm run dev --prefix functions/ActionsOnGoogleFulfillment",
     "prod": "npm run set:webhook:prod && npm run deploy"
   },
   "devDependencies": {
