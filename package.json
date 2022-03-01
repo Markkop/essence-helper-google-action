@@ -11,10 +11,9 @@
     "lint:fix": "eslint --fix \"**/*.js\"",
     "serve": "firebase serve",
     "deploy": "firebase deploy",
-    "deploy-project": "firebase deploy --project essence-helper --only hosting",
-    "push": "cd sdk && gactions push && cd ..",
-    "pull": "cd sdk && gactions pull -f --clean && cd ..",
-    "preview": "cd sdk && gactions deploy preview && cd ..",
+    "push": "gactions push",
+    "pull": "gactions pull -f --clean",
+    "preview": "gactions deploy preview",
     "push-and-preview": "npm run push && npm run preview",
     "enable-activity-controls": "env GOOGLE_APPLICATION_CREDENTIALS=$PWD/service_account.json web-and-app-activity-controls",
     "test": "npm run lint && env GOOGLE_APPLICATION_CREDENTIALS=$PWD/service_account.json mocha --recursive --require ts-node/register test/test.ts"
