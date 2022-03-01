@@ -42,3 +42,4 @@ Soon
 
 - [Actions SDK and Builder quick start guide](https://developers.google.com/assistant/conversational/quickstart)
 - [How to implement local fulfillment for Google Assistant actions using Dialogflow](https://www.freecodecamp.org/news/how-to-implement-local-fulfillment-for-google-assistant-actions-using-dialogflow-1b3b3a13075f/)
+- [Use TypeScript for Cloud Functions](https://firebase.google.com/docs/functions/typescript)
