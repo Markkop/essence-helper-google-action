@@ -1,153 +1,201 @@
 synonym:
   entities:
-    assistant:
-      synonyms:
-      - Assistant
-    automend:
-      synonyms:
-      - Automend
-    banshees_bellow:
+    banshee_s_bellow:
       synonyms:
       - Banshee's Bellow
-    bastion:
-      synonyms:
-      - Bastion
-    blood Thief:
+      - Banshee
+      - Bellow
+    blood_thief:
       synonyms:
       - Blood Thief
-    body Meld:
+      - Blood
+    body_meld:
       synonyms:
       - Body Meld
-    brain Freeze:
+      - Body
+    brain_freeze:
       synonyms:
       - Brain Freeze
-    brainiac:
-      synonyms:
-      - Brainiac
-    brawler:
-      synonyms:
-      - Brawler
-    breath Stealer:
+      - Brain
+      - Freeze
+    breath_stealer:
       synonyms:
       - Breath Stealer
-    brutal:
-      synonyms:
-      - Brutal
+      - Breath
     bunker:
       synonyms:
       - Bunker
     chrono_skip:
       synonyms:
       - Chrono Skip
-    deaths_chariot:
+      - Chrono
+      - Skip
+    death_s_chariot:
       synonyms:
       - Death's Chariot
+      - Death
+      - Chariot
     deep_breathing:
       synonyms:
       - Deep Breathing
+      - Deep
+      - Breathing
     defiant:
       synonyms:
       - Defiant
-    eagle_Eye:
-      synonyms:
-      - Eagle Eye
-    essence Flow:
-      synonyms:
-      - Essence Flow
     essence_thief:
       synonyms:
       - Essence Thief
-    exemplar:
-      synonyms:
-      - Exemplar
-    ferocious:
-      synonyms:
-      - Ferocious
     fighting_spirit:
       synonyms:
       - Fighting Spirit
+      - Fighting
     flare:
       synonyms:
       - Flare
     flow_state:
       synonyms:
       - Flow State
+      - State
+    godking_s_ascension:
+      synonyms:
+      - Godking's Ascension
+      - Ascension
+    godking_s_passion:
+      synonyms:
+      - Godking's Passion
+      - Passion
     helping_hand:
       synonyms:
       - Helping Hand
+      - Helping
+      - Hand
     inner_rage:
       synonyms:
       - Inner Rage
-    killers_edge:
+      - Inner
+      - Rage
+    killer_s_edge:
       synonyms:
       - Killer's Edge
+      - Killer
+      - Edge
     kingmaker:
       synonyms:
       - Kingmaker
-    lightfoot:
-      synonyms:
-      - Lightfoot
     marrow_stealer:
       synonyms:
       - Marrow Stealer
-    mighty:
-      synonyms:
-      - Mighty
+      - Marrow
     mind_meld:
       synonyms:
       - Mind Meld
-    oxygenator:
-      synonyms:
-      - Oxygenator
+      - Mind
     pain_link:
       synonyms:
       - Pain Link
+      - Pain
+      - Link
     pit_fighter:
       synonyms:
       - Pit Fighter
-    robust:
-      synonyms:
-      - Robust
-    sadistic:
-      synonyms:
-      - Sadistic
+      - Pit
+      - Fighter
     scatter:
       synonyms:
       - Scatter
-    shell:
-      synonyms:
-      - Shell
     shelter:
       synonyms:
       - Shelter
-    slayer:
-      synonyms:
-      - Slayer
     soul_shock:
       synonyms:
       - Soul Shock
+      - Soul
+      - Shock
     spirit_meld:
       synonyms:
       - Spirit Meld
-    sprinter:
-      synonyms:
-      - Sprinter
-    steadfast:
-      synonyms:
-      - Steadfast
     super_heated:
       synonyms:
       - Super Heated
+      - Super
+      - Heated
     thick_as_thieves:
       synonyms:
       - Thick As Thieves
-    vanguard:
-      synonyms:
-      - Vanguard
-    warlock:
-      synonyms:
-      - Warlock
+      - Thick
+      - Thieves
     well_rounded:
       synonyms:
       - Well Rounded
+      - Well
+      - Rounded
+    warlock:
+      synonyms:
+      - Warlock
+    brawler:
+      synonyms:
+      - Brawler
+    exemplar:
+      synonyms:
+      - Exemplar
+    mighty:
+      synonyms:
+      - Mighty
+    brainiac:
+      synonyms:
+      - Brainiac
+    vanguard:
+      synonyms:
+      - Vanguard
+    eagle_eye:
+      synonyms:
+      - Eagle Eye
+      - Eagle
+      - Eye
+    slayer:
+      synonyms:
+      - Slayer
+    sadistic:
+      synonyms:
+      - Sadistic
+    sprinter:
+      synonyms:
+      - Sprinter
+    oxygenator:
+      synonyms:
+      - Oxygenator
+    lightfoot:
+      synonyms:
+      - Lightfoot
+    steadfast:
+      synonyms:
+      - Steadfast
+    automend:
+      synonyms:
+      - Automend
+    essence_flow:
+      synonyms:
+      - Essence Flow
+    shell:
+      synonyms:
+      - Shell
+    robust:
+      synonyms:
+      - Robust
+    assistant:
+      synonyms:
+      - Assistant
+    brutal:
+      synonyms:
+      - Brutal
+    bastion:
+      synonyms:
+      - Bastion
+    ferocious:
+      synonyms:
+      - Ferocious
+    bolster:
+      synonyms:
+      - Bolster
   matchType: EXACT_MATCH
