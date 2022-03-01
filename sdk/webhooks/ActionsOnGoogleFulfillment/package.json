@@ -3,7 +3,11 @@
   "version": "0.0.0",
   "private": true,
   "description": "A Google Action that provides information about the Zenith VR MMORPG.",
-  "main": "index.js",
+  "main": "lib/index.js",
+  "scripts": {
+    "build": "tsc",
+    "dev": "nodemon --watch 'src/' --exec 'ts-node src/index.ts' -e ts"
+  },
   "engines": {
     "node": "14"
   },

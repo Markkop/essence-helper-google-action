@@ -8,13 +8,13 @@ async function getNgrokUrl() {
   try {
     const response = await axios(LOCAL_NGROK_URL)
     const data = response.data as Ngrok.TunnelsResponse
-    const secureTunnel = data.tunnels.find(tunnel => tunnel.proto === 'https')
+    const secureTunnel = data.tunnels.find((tunnel) => tunnel.proto === 'https')
     if (!secureTunnel) return
     const publicUrl = secureTunnel.public_url
     return publicUrl
   } catch (error: any) {
     if (error.code === 'ECONNREFUSED') {
-      console.error("Looks like you're not running ngrok.")
+      console.error('Looks like you\'re not running ngrok.')
       process.exit(1)
     }
     console.log(error)

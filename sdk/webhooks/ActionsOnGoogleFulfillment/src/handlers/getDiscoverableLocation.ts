@@ -1,8 +1,10 @@
-const { t } = require('i18next')
-const { getIntentParameter } = require('./helpers')
-const { getDiscoverable, getDiscoverableText } = require('./helper_discoverable')
+import { ConversationV3 } from '@assistant/conversation'
 
-exports.getDiscoverableLocationHandler = (conv) => {
+import { t } from 'i18next'
+import { getDiscoverable, getDiscoverableText } from '../helpers/discoverable'
+import { getIntentParameter } from '../helpers/parameters'
+
+export function getDiscoverableLocationHandler(conv: ConversationV3) {
   const providedDiscoverableName = getIntentParameter(conv, 'discoverable')
 
   if (!providedDiscoverableName) {
@@ -17,7 +19,7 @@ exports.getDiscoverableLocationHandler = (conv) => {
     return
   }
 
-  if (!discoverable.additionalText && !discoverable.sources.length) {
+  if (!discoverable.additionalText && !discoverable.sources?.length) {
     conv.add(t('UNKNOWN_SOURCE'))
     return
   }

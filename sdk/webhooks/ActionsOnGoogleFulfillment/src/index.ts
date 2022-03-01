@@ -1,8 +1,8 @@
-const express = require('express')
-const bodyParser = require('body-parser')
-const functions = require('firebase-functions')
+import express from 'express'
+import bodyParser from 'body-parser'
+import * as functions from 'firebase-functions'
+import ActionsOnGoogleApp from './app'
 
-const ActionsOnGoogleApp = require('./app')
 const expressApp = express().use(bodyParser.json())
 
 expressApp.post('/', ActionsOnGoogleApp)

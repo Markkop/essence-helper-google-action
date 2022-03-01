@@ -1,6 +1,6 @@
 /* eslint-disable max-len */
-exports.strings = {
-  LAUNCH: 'Hello Zenithian. I can get you the effects of an equipment perk or the location of a cooking ingredient. Which one would you like to know?',
+export default {
+  LAUNCH: 'Hello Zenithianus. I can get you the effects of an equipment perk or the location of a cooking ingredient. Which one would you like to know?',
   PERK: '{{perkName}} is {{indefiniteArticle}} {{perkType}} perk with the following effect: {{perkEffect}}',
   SOURCE: '{{sourceText}}',
   ASK_FOR_PERK: 'Please, provide the name of an equipment perk.',

@@ -10,12 +10,12 @@ export function updateWebhookUrl(url: string) {
     ...settings,
     httpsEndpoint: {
       ...settings.httpsEndpoint,
-      baseUrl: url
-    }
+      baseUrl: url,
+    },
   }
   writeFileSync(webhookSettingsPath, dump(newSettings, {
-    lineWidth: -1
-  }));
+    lineWidth: -1,
+  }))
   console.log('Webhook URL updated to:', url)
 }
 
