@@ -9,16 +9,7 @@ slots:
   name: discoverable
   promptSettings:
     initialPrompt:
-      staticPrompt:
-        candidates:
-        - promptResponse:
-            content:
-              card:
-                text: Card Content
-                title: Card Title
-            firstSimple:
-              variants:
-              - speech: Ok, tell me the name of the cooking ingredient.
+      webhookHandler: ask_for_discoverable
   required: true
   type:
     name: discoverable

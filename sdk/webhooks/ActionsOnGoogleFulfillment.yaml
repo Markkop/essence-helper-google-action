@@ -1,8 +1,10 @@
 handlers:
-  - name: welcome
-  - name: fallback
-  - name: get_equipment_perk
-  - name: get_discoverable_location
+- name: welcome
+- name: fallback
+- name: get_equipment_perk
+- name: get_discoverable_location
+- name: ask_for_discoverable
+- name: ask_for_perk
 httpsEndpoint:
   baseUrl: https://us-central1-essence-helper.cloudfunctions.net/ActionsOnGoogleFulfillment
   endpointApiVersion: 2
