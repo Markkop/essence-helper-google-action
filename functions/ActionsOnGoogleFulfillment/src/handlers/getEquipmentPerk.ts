@@ -2,12 +2,12 @@ import { ConversationV3, Card } from '@assistant/conversation'
 import { Strings } from '../helpers/strings'
 import { getIntentParameter } from '../helpers/parameters'
 import { t } from 'i18next'
-import { getIndefiniteArticleForPerkType, getPerk } from '../helpers/perk'
+import { getIndefiniteArticleForPerkType, getPerk, parsePerkEffect } from '../helpers/perk'
 
 export function getEquipmentPerkHandler(conv: ConversationV3) {
-  const providedPerkName = getIntentParameter(conv, 'perk')
+  const perkId = getIntentParameter(conv, 'perk')
 
-  const perk = getPerk(providedPerkName)
+  const perk = getPerk(perkId)
   if (!perk) {
     conv.add(t(Strings.PERK_NOT_FOUND))
     return
@@ -20,7 +20,7 @@ export function getEquipmentPerkHandler(conv: ConversationV3) {
   }
 
   const indefiniteArticle = getIndefiniteArticleForPerkType(perk.type)
-  const perkEffect = perk.effect.replace('by', '')
+  const perkEffect = parsePerkEffect(perk.effect)
   const perkType = perk.type
   const accordingToSource = t(Strings.ACCORDING_TO_SOURCE, { source: 'ZenithMMO Fandom Wiki' })
   const effectSpeakOutput = t(Strings.PERK, { indefiniteArticle, perkName, perkType, perkEffect })
