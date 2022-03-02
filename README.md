@@ -5,7 +5,9 @@ Check its Alexa Skill version [here](https://github.com/Markkop/essence-helper-a
 
 ## Get the Skill
 
-Soon
+![print](https://i.imgur.com/6SPXS9t.png)
+
+https://assistant.google.com/services/a/uid/0000005dbaeb2c8d?hl=en-US
 
 ## Usage
 
