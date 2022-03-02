@@ -36,7 +36,7 @@ Soon
 ### Deployment
 
 - Update `scripts/updateWebhookUrlToProduction.ts` file with the Webhook Production URL
-- Run `npm run prod` to update it in the remote project
+- Run `npm run prod` to update it in the remote project and deploy webhook function
 - Proceed with Google's verification process in [Google Actions Console](https://console.actions.google.com/)
 ### References:
 
